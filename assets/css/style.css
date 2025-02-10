@@ -1043,6 +1043,6 @@ video::-webkit-media-controls-enclosure {
 	}
 
 	.offices-box h4 {
-		font-size: 20px;
-	}
+        font-size: 15px;
+    }
 }
