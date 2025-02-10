@@ -998,7 +998,7 @@ video::-webkit-media-controls-enclosure {
 	}
 
 	.counter-container {
-		justify-content: center;
+		justify-content: start;
 	}
 
 	.counter {
