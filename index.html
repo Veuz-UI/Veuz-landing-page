@@ -111,7 +111,10 @@
     <div class="banner">
         <div class="video-container">
             <video id="myVideo" controls loop autoplay muted>
+                <source src="assets/img/banner-video.mp4" type="video/mp4">
                 <source src="assets/img/banner-video.webm" type="video/webm">
+                <!-- Fallback image if video fails -->
+                <img src="assets/img/poster.png" alt="Banner">
             </video>
 
             <div class="custom-container">
