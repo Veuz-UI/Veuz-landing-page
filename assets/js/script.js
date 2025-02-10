@@ -17,7 +17,7 @@ window.addEventListener('scroll', () => {
 
 
 /* <!-- ==================== Fixed Header ==================== --> */
-// ...existing code...
+
 
 /* <!-- ==================== GSAP and Carousel Initialization ==================== --> */
 document.addEventListener("DOMContentLoaded", function() {
@@ -47,8 +47,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-  // Counter Animation Function
-
 
   // Item animations
   gsap.utils.toArray(".item").forEach((box, index) => {
@@ -72,37 +70,17 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+/* <!-- ==================== GSAP and Carousel Initialization ==================== --> */
 
-document.addEventListener("DOMContentLoaded", function() {
-  // Get offcanvas element and backdrop
-  const offcanvas = document.getElementById('offcanvasRight');
-  const bsOffcanvas = new bootstrap.Offcanvas(offcanvas);
-  const backdrop = document.querySelector('.offcanvas-backdrop');
 
-  // Get all links in the mobile nav
-  const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
+/* <!-- ==================== Offcanvas ==================== --> */
 
-  // Add click event listener to each link
-  mobileNavLinks.forEach(link => {
-      link.addEventListener('click', () => {
-          // Hide offcanvas
-          bsOffcanvas.hide();
-          // Remove backdrop if it exists
-          if (backdrop) {
-              backdrop.remove();
-          }
-      });
-  });
 
-  // Add event listener for when offcanvas is hidden
-  offcanvas.addEventListener('hidden.bs.offcanvas', () => {
-      // Remove backdrop if it exists
-      if (backdrop) {
-          backdrop.remove();
-      }
-  });
-});
 
+/* <!-- ==================== offcanvas ==================== --> */
+
+
+/* <!-- ==================== click active menu ==================== --> */
 
 document.addEventListener("DOMContentLoaded", function() {
   // Get all links that have a hash (#) in their href
@@ -126,6 +104,11 @@ document.addEventListener("DOMContentLoaded", function() {
       });
   });
   });
+
+
+  /* <!-- ==================== click active menu ==================== --> */
+
+  /* <!-- ==================== active menu ==================== --> */
 
 
   document.addEventListener("DOMContentLoaded", function() {
@@ -169,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function() {
     lenis.on('scroll', updateActiveLink);
 });
 
-
+/* <!-- ==================== active menu ==================== --> */
 
 
 

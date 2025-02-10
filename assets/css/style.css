@@ -205,6 +205,29 @@ img {
 
 
 
+.offcanvas {
+    visibility: hidden;
+}
+
+.offcanvas.show {
+    visibility: visible;
+}
+
+.offcanvas-backdrop {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.offcanvas-backdrop.show {
+    opacity: 0.5;
+}
+
+.mobile-nav .offcanvas {
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
   /* <!-- ==================== header ==================== --> */
 
 	/* <!-- ==================== banner ==================== --> */
@@ -895,12 +918,13 @@ video::-webkit-media-controls {
 		display: none;
 	}
 
-	.counter-container{
-		justify-content: start;
-	}
+	.counter-container {
+        justify-content: center;
+    }
 	.counter{
 		margin: inherit;
 	}
+
 	.todo-nav{
 		margin-top: 30px;
 	}
@@ -926,6 +950,12 @@ video::-webkit-media-controls {
 	.footer a {
         font-size: 15px;
     }
+	.offices-box{
+		padding: 10px;
+	}
+	.offices-box h4{
+		font-size: 20px;
+	}
 }
 
 
