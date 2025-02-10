@@ -110,7 +110,7 @@
     </div>
     <div class="banner">
         <div class="video-container">
-            <video id="myVideo" controls loop autoplay muted>
+            <video id="bannerVideo" controls loop autoplay muted>
                 <source src="assets/img/banner-video.mp4" type="video/mp4">
                 <source src="assets/img/banner-video.webm" type="video/webm">
                 <!-- Fallback image if video fails -->
@@ -696,6 +696,16 @@
         animateCounter(counter);
     });
 });
+    </script>
+
+
+
+<script>
+    const bannerVideo = document.getElementById("bannerVideo");
+    
+    if (window.innerWidth <= 768) { // Adjust for mobile or small screens
+      bannerVideo.removeAttribute("autoplay");
+    }
     </script>
 
 </body>
