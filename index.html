@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/v-e.svg">
 </head>
 
 <body>
@@ -21,6 +22,7 @@
     <!-- ==================== Cursor ==================== -->
 
 
+    <section id="bannerSection">
     <div class="nav-main" id="navbar">
         <div class="custom-container">
             <nav>
@@ -29,37 +31,83 @@
                         <img src="assets/img/logo-main.png" alt="" class="logo-width">
                     </a>
                     <ul class="nav-links">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About Us</a></li>
+                        <li><a href="#bannerSection">Home</a></li>
+                        <li><a href="#aboutSection">About Us</a></li>
                         <li><img src="assets/img/v-e.svg" alt=""></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#serviceSection">Services</a></li>
+                        <li><a href="#productSection">Products</a></li>
                     </ul>
 
-                    <div>
-                        <button href="#" class="button" style="--clr: #002741"><span class="button__icon-wrapper"><svg
-                                    viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                    class="button__icon-svg" width="10">
-                                    <path
-                                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-                                        fill="currentColor"></path>
-                                </svg>
+                    <div class="d-flex align-items-center">
+                        <div class="head-btn">
+                            <button href="#" class="button" style="--clr: #002741"><span class="button__icon-wrapper"><svg
+                                viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                class="button__icon-svg" width="10">
+                                <path
+                                    d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                    fill="currentColor"></path>
+                            </svg>
 
-                                <svg viewBox="0 0 14 15" fill="none" width="10" xmlns="http://www.w3.org/2000/svg"
-                                    class="button__icon-svg button__icon-svg--copy">
-                                    <path
-                                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-                                        fill="currentColor"></path>
-                                </svg>
-                            </span>
-                            Explore All
-                        </button>
+                            <svg viewBox="0 0 14 15" fill="none" width="10" xmlns="http://www.w3.org/2000/svg"
+                                class="button__icon-svg button__icon-svg--copy">
+                                <path
+                                    d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </span>
+                        Connect with us
+                    </button>
+                        </div>
+
+
+                        <div class="mobile-nav">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                <span class="navbar-toggler-icon"><img src="assets/img/menu.png" alt=""></span>
+                            </button>
+                            
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <ul class="mobile-nav-links">
+                                        <li><a href="#bannerSection">Home</a></li>
+                                        <li><a href="#aboutSection">About Us</a></li>
+
+                                        <li><a href="#serviceSection">Services</a></li>
+                                        <li><a href="#productSection">Products</a></li>
+                                    </ul>
+                                    <div class="button-2">
+                                        <button href="#" class="button" style="--clr: #002741"><span
+                                                class="button__icon-wrapper"><svg viewBox="0 0 14 15" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg" class="button__icon-svg" width="10">
+                                                    <path
+                                                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                                        fill="currentColor"></path>
+                                                </svg>
+            
+                                                <svg viewBox="0 0 14 15" fill="none" width="10" xmlns="http://www.w3.org/2000/svg"
+                                                    class="button__icon-svg button__icon-svg--copy">
+                                                    <path
+                                                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                                        fill="currentColor"></path>
+                                                </svg>
+                                            </span>
+                                            Explore All
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+
+                 
                 </div>
             </nav>
         </div>
     </div>
-
     <div class="banner">
         <div class="video-container">
             <video id="myVideo" controls loop autoplay muted>
@@ -148,11 +196,12 @@
 
 
     </div>
+    </section>
 
-    <section class="about-section">
+    <section class="about-section" id="aboutSection">
         <div class="custom-container">
-            <div class="row gx-5">
-                <div class="col-lg-7">
+            <div class="row gx-5 mt-md-4">
+                <div class="col-lg-7 order-2 order-md-1">
                     <div class="section-title">
                         <h3>Innovative <span>Tech Solutions</span> to <br> Drive
                             Digital Transformation and <br>
@@ -209,8 +258,8 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-lg-5">
-                    <img src="assets/img/abt-img.png" alt="">
+                <div class="col-lg-5 order-1 order-md-2">
+                    <img src="assets/img/abt-img.png" alt="" class="abt-img">
                 </div>
             </div>
         </div>
@@ -220,174 +269,177 @@
 
 
 
-    <div class="what-todo-section section-space-sm-y">
-        <div class="section-space-sm-bottom">
+    <section id="serviceSection">
+        <div class="what-todo-section section-space-sm-y">
+            <div class="section-space-sm-bottom">
+                <div class="container">
+                    <div class="row g-4 justify-content-between">
+                        <div class="col-md-5">
+                            <div class="section-title">
+                                <h3 class="color-white">Our <span>Services</span></h3>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-xl-5">
+                            <h5 class="serv-right-cntnt">Explore Our Extensive Array of Services, Featuring 
+                                Advanced and Innovative Digital Solutions. Your Success
+                                is Our Priority.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="container">
-                <div class="row g-4 justify-content-between">
-                    <div class="col-md-5">
-                        <div class="section-title">
-                            <h3 class="color-white">Our <span>Services</span></h3>
+                <div class="row gx-5">
+                    <div class="col-md-7 order-2 order-md-1">
+                        <div data-bs-spy="scroll" data-bs-target="#toDoScrollspy" data-bs-smooth-scroll="true">
+                            <div class="service-scroll-box" id="imageGenerator">
+                                <div class="serv-images">
+                                    <img src="assets/img/mobile-app.png" alt="">
+                                </div>
+                               
+                                <h5>Mobile App Development</h5>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                                    and scrambled it to make a type specimen book.</p>
+    
+                                    <div class="button-2">
+                                        <button href="#" class="button" style="--clr: #002741"><span
+                                                class="button__icon-wrapper"><svg viewBox="0 0 14 15" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg" class="button__icon-svg" width="10">
+                                                    <path
+                                                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                                        fill="currentColor"></path>
+                                                </svg>
+            
+                                                <svg viewBox="0 0 14 15" fill="none" width="10" xmlns="http://www.w3.org/2000/svg"
+                                                    class="button__icon-svg button__icon-svg--copy">
+                                                    <path
+                                                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                                        fill="currentColor"></path>
+                                                </svg>
+                                            </span>
+                                            Explore All
+                                        </button>
+                                    </div>
+    
+                            </div>
+                            <div class="service-scroll-box" id="imageCustomization">
+                                <div class="serv-images">
+                                    <img src="assets/img/odoo-development.png" alt="">
+                                </div>
+                               
+                                <h5>Odoo Development</h5>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                                    and scrambled it to make a type specimen book.</p>
+    
+                                    <div class="button-2">
+                                        <button href="#" class="button" style="--clr: #002741"><span
+                                                class="button__icon-wrapper"><svg viewBox="0 0 14 15" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg" class="button__icon-svg" width="10">
+                                                    <path
+                                                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                                        fill="currentColor"></path>
+                                                </svg>
+            
+                                                <svg viewBox="0 0 14 15" fill="none" width="10" xmlns="http://www.w3.org/2000/svg"
+                                                    class="button__icon-svg button__icon-svg--copy">
+                                                    <path
+                                                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                                        fill="currentColor"></path>
+                                                </svg>
+                                            </span>
+                                            Explore All
+                                        </button>
+                                    </div>
+                            </div>
+                            <div class="service-scroll-box" id="generateVideos">
+                                <div class="serv-images">
+                                    <img src="assets/img/microsoft.png" alt="">
+                                </div>
+                               
+                                <h5>Microsoft Office 365</h5>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                                    and scrambled it to make a type specimen book.</p>
+    
+                                    <div class="button-2">
+                                        <button href="#" class="button" style="--clr: #002741"><span
+                                                class="button__icon-wrapper"><svg viewBox="0 0 14 15" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg" class="button__icon-svg" width="10">
+                                                    <path
+                                                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                                        fill="currentColor"></path>
+                                                </svg>
+            
+                                                <svg viewBox="0 0 14 15" fill="none" width="10" xmlns="http://www.w3.org/2000/svg"
+                                                    class="button__icon-svg button__icon-svg--copy">
+                                                    <path
+                                                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                                        fill="currentColor"></path>
+                                                </svg>
+                                            </span>
+                                            Explore All
+                                        </button>
+                                    </div>
+                            </div>
+                            <div class="service-scroll-box" id="removedBg">
+                                <div class="serv-images">
+                                    <img src="assets/img/website-develepment.png" alt="">
+                                </div>
+                               
+                                <h5>Website Development</h5>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                                    and scrambled it to make a type specimen book.</p>
+    
+                                    <div class="button-2">
+                                        <button href="#" class="button" style="--clr: #002741"><span
+                                                class="button__icon-wrapper"><svg viewBox="0 0 14 15" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg" class="button__icon-svg" width="10">
+                                                    <path
+                                                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                                        fill="currentColor"></path>
+                                                </svg>
+            
+                                                <svg viewBox="0 0 14 15" fill="none" width="10" xmlns="http://www.w3.org/2000/svg"
+                                                    class="button__icon-svg button__icon-svg--copy">
+                                                    <path
+                                                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                                        fill="currentColor"></path>
+                                                </svg>
+                                            </span>
+                                            Explore All
+                                        </button>
+                                    </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-7 col-xl-5">
-                        <h5 class="serv-right-cntnt">Explore Our Extensive Array of Services, Featuring 
-                            Advanced and Innovative Digital Solutions. Your Success
-                            is Our Priority.</h5>
+                    <div class="col-md-5 order-1 order-md-2">
+                        <nav class="todo-nav" id="toDoScrollspy">
+                            <ul class="list gap-5 todo-nav__menu">
+                                <li>
+                                    <a href="#imageGenerator" class="nav-link link todo-nav__link"> Mobile app Development </a>
+                                </li>
+                                <li>
+                                    <a href="#imageCustomization" class="nav-link link todo-nav__link"> Odoo Development </a>
+                                </li>
+                                <li>
+                                    <a href="#generateVideos" class="nav-link link todo-nav__link"> Microsoft Office 365 </a>
+                                </li>
+                                <li>
+                                    <a href="#removedBg" class="nav-link link todo-nav__link"> Website Development </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
+                    
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row gx-5">
-                <div class="col-md-5 order-xl-2">
-                    <nav class="todo-nav" id="toDoScrollspy">
-                        <ul class="list gap-5 todo-nav__menu">
-                            <li>
-                                <a href="#imageGenerator" class="nav-link link todo-nav__link"> Mobile app Development </a>
-                            </li>
-                            <li>
-                                <a href="#imageCustomization" class="nav-link link todo-nav__link"> Odoo Development </a>
-                            </li>
-                            <li>
-                                <a href="#generateVideos" class="nav-link link todo-nav__link"> Microsoft Office 365 </a>
-                            </li>
-                            <li>
-                                <a href="#removedBg" class="nav-link link todo-nav__link"> Website Development </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-md-7">
-                    <div data-bs-spy="scroll" data-bs-target="#toDoScrollspy" data-bs-smooth-scroll="true">
-                        <div class="service-scroll-box" id="imageGenerator">
-                            <div class="serv-images">
-                                <img src="assets/img/mobile-app.png" alt="">
-                            </div>
-                           
-                            <h5>Mobile App Development</h5>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                                and scrambled it to make a type specimen book.</p>
-
-                                <div class="button-2">
-                                    <button href="#" class="button" style="--clr: #002741"><span
-                                            class="button__icon-wrapper"><svg viewBox="0 0 14 15" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg" class="button__icon-svg" width="10">
-                                                <path
-                                                    d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-                                                    fill="currentColor"></path>
-                                            </svg>
-        
-                                            <svg viewBox="0 0 14 15" fill="none" width="10" xmlns="http://www.w3.org/2000/svg"
-                                                class="button__icon-svg button__icon-svg--copy">
-                                                <path
-                                                    d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-                                                    fill="currentColor"></path>
-                                            </svg>
-                                        </span>
-                                        Explore All
-                                    </button>
-                                </div>
-
-                        </div>
-                        <div class="service-scroll-box" id="imageCustomization">
-                            <div class="serv-images">
-                                <img src="assets/img/odoo-development.png" alt="">
-                            </div>
-                           
-                            <h5>Odoo Development</h5>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                                and scrambled it to make a type specimen book.</p>
-
-                                <div class="button-2">
-                                    <button href="#" class="button" style="--clr: #002741"><span
-                                            class="button__icon-wrapper"><svg viewBox="0 0 14 15" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg" class="button__icon-svg" width="10">
-                                                <path
-                                                    d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-                                                    fill="currentColor"></path>
-                                            </svg>
-        
-                                            <svg viewBox="0 0 14 15" fill="none" width="10" xmlns="http://www.w3.org/2000/svg"
-                                                class="button__icon-svg button__icon-svg--copy">
-                                                <path
-                                                    d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-                                                    fill="currentColor"></path>
-                                            </svg>
-                                        </span>
-                                        Explore All
-                                    </button>
-                                </div>
-                        </div>
-                        <div class="service-scroll-box" id="generateVideos">
-                            <div class="serv-images">
-                                <img src="assets/img/microsoft.png" alt="">
-                            </div>
-                           
-                            <h5>Microsoft Office 365</h5>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                                and scrambled it to make a type specimen book.</p>
-
-                                <div class="button-2">
-                                    <button href="#" class="button" style="--clr: #002741"><span
-                                            class="button__icon-wrapper"><svg viewBox="0 0 14 15" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg" class="button__icon-svg" width="10">
-                                                <path
-                                                    d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-                                                    fill="currentColor"></path>
-                                            </svg>
-        
-                                            <svg viewBox="0 0 14 15" fill="none" width="10" xmlns="http://www.w3.org/2000/svg"
-                                                class="button__icon-svg button__icon-svg--copy">
-                                                <path
-                                                    d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-                                                    fill="currentColor"></path>
-                                            </svg>
-                                        </span>
-                                        Explore All
-                                    </button>
-                                </div>
-                        </div>
-                        <div class="service-scroll-box" id="removedBg">
-                            <div class="serv-images">
-                                <img src="assets/img/website-develepment.png" alt="">
-                            </div>
-                           
-                            <h5>Website Development</h5>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                                and scrambled it to make a type specimen book.</p>
-
-                                <div class="button-2">
-                                    <button href="#" class="button" style="--clr: #002741"><span
-                                            class="button__icon-wrapper"><svg viewBox="0 0 14 15" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg" class="button__icon-svg" width="10">
-                                                <path
-                                                    d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-                                                    fill="currentColor"></path>
-                                            </svg>
-        
-                                            <svg viewBox="0 0 14 15" fill="none" width="10" xmlns="http://www.w3.org/2000/svg"
-                                                class="button__icon-svg button__icon-svg--copy">
-                                                <path
-                                                    d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-                                                    fill="currentColor"></path>
-                                            </svg>
-                                        </span>
-                                        Explore All
-                                    </button>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
 
 
-    <section class="product-section">
+    <section class="product-section" id="productSection">
         <div class="custom-container">
             <div class="section-title text-center">
                 <h3>Our <span>Products</span></h3>
@@ -478,6 +530,29 @@
                         </div>
                 </div>
 
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="offices-box">
+                            <h4>Saudhi Arabia</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="offices-box">
+                            <h4>Dubai</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="offices-box">
+                            <h4>Bahrain</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="offices-box">
+                            <h4>India</h4>
+                        </div>
+                    </div>
+                </div>
+
                 
             
         </div>
@@ -492,7 +567,7 @@
 
 
 
-
+    <script src="assets/js/lenis.min.js"></script>
     <script src="assets/js/animation.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/aos.js"></script>
@@ -502,27 +577,82 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
-   
     <script src="assets/js/gsap.min.js"></script>
-    <script src="assets/js/lenis.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script>
+        // Smooth Scrolling
+        const lenis = new Lenis();
+    
+        let isScrolling = false;
+        const scrollDelay = 100; // Delay in milliseconds
+    
+        lenis.on('scroll', (e) => {
+          if (!isScrolling) {
+            isScrolling = true;
+    
+            console.log(`Scroll event:`, e);
+    
+            setTimeout(() => {
+              isScrolling = false;
+            }, scrollDelay);
+          }
+        });
+    
+        function raf(time) {
+          lenis.raf(time);
+          requestAnimationFrame(raf);
+        }
+    
+        requestAnimationFrame(raf);
+    </script>
+
+    <script>
+                document.addEventListener("DOMContentLoaded", function() {
+        // Get all links that have a hash (#) in their href
+        const links = document.querySelectorAll('a[href^="#"]');
+        
+        links.forEach(link => {
+            link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Get the target section
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            
+            if (targetSection) {
+                // Smooth scroll to target
+                lenis.scrollTo(targetSection, {
+                duration: 1.5,
+                easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
+                });
+            }
+            });
+        });
+        });
+    </script>
 
 
     <script>
             $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 0,
-        nav: true,
-        autoplay: true,
-        smartSpeed: 500, 
-        responsive: {
+                loop: true,
+                margin: 0,
+                nav: false,    // Hide navigation arrows
+                dots: false,   // Hide navigation dots
+                autoplay: true,
+                smartSpeed: 500,
+                autoplayTimeout: 3000,
+                responsive: {
             0: {
                 items: 1
             },
             600: {
-                items: 3
+                items: 2
             },
             1000: {
+                items: 2
+            },
+            1200: {
                 items: 4
             }
         }
@@ -530,28 +660,38 @@
     </script>
 
     <script>
-            const animateCounter = (element) => {
-  const target = parseInt(element.dataset.target);
-  gsap.fromTo(element, 
-    { innerText: 0 }, 
-    {
-      innerText: target,
-      duration: 8,
-      ease: "power1.out",
-      snap: { innerText: 1 },
-      onUpdate: () => element.innerText = Math.floor(gsap.getProperty(element, "innerText"))
-    }
-  );
-};
+                   document.addEventListener("DOMContentLoaded", function() {
+    // Initialize GSAP ScrollTrigger
+    gsap.registerPlugin(ScrollTrigger);
 
-// Set up counter animations
-document.querySelectorAll(".counter").forEach(counter => {
-  ScrollTrigger.create({
-    trigger: counter,
-    start: "top 80%",
-    once: true,
-    onEnter: () => animateCounter(counter)
-  });
+    const animateCounter = (element) => {
+        const target = parseInt(element.dataset.target);
+        return gsap.fromTo(element, 
+            { innerText: 0 }, 
+            {
+                innerText: target,
+                duration: 6,
+                ease: "power2.out",
+                snap: { innerText: 1 },
+                scrollTrigger: {
+                    trigger: element,
+                    start: "top 80%",
+                    // end: "bottom 20%",
+                    toggleActions: "play none none reverse",
+                    // markers: true, // Remove in production
+                },
+                onUpdate: function() {
+                    element.innerText = Math.floor(this.targets()[0].innerText);
+                }
+            }
+        );
+    };
+
+    // Initialize counters
+    const counters = document.querySelectorAll(".counter");
+    counters.forEach(counter => {
+        animateCounter(counter);
+    });
 });
     </script>
 

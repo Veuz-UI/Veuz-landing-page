@@ -73,11 +73,113 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+document.addEventListener("DOMContentLoaded", function() {
+  // Get offcanvas element and backdrop
+  const offcanvas = document.getElementById('offcanvasRight');
+  const bsOffcanvas = new bootstrap.Offcanvas(offcanvas);
+  const backdrop = document.querySelector('.offcanvas-backdrop');
+
+  // Get all links in the mobile nav
+  const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
+
+  // Add click event listener to each link
+  mobileNavLinks.forEach(link => {
+      link.addEventListener('click', () => {
+          // Hide offcanvas
+          bsOffcanvas.hide();
+          // Remove backdrop if it exists
+          if (backdrop) {
+              backdrop.remove();
+          }
+      });
+  });
+
+  // Add event listener for when offcanvas is hidden
+  offcanvas.addEventListener('hidden.bs.offcanvas', () => {
+      // Remove backdrop if it exists
+      if (backdrop) {
+          backdrop.remove();
+      }
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Get all links that have a hash (#) in their href
+  const links = document.querySelectorAll('a[href^="#"]');
+  
+  links.forEach(link => {
+      link.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      // Get the target section
+      const targetId = this.getAttribute('href');
+      const targetSection = document.querySelector(targetId);
+      
+      if (targetSection) {
+          // Smooth scroll to target
+          lenis.scrollTo(targetSection, {
+          duration: 1.5,
+          easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
+          });
+      }
+      });
+  });
+  });
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links li a');
+    const productSection = document.getElementById('productSection');
+
+    function updateActiveLink() {
+        const scrollPosition = window.scrollY + 100;
+
+        // Check if we've scrolled past the product section
+        if (productSection && scrollPosition > (productSection.offsetTop + productSection.offsetHeight)) {
+            // Remove active class from all links after product section
+            navLinks.forEach(link => link.classList.remove('active'));
+            return;
+        }
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionBottom = sectionTop + section.offsetHeight;
+            const sectionId = section.getAttribute('id');
+
+            if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${sectionId}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    }
+
+    // Update active link on scroll
+    window.addEventListener('scroll', updateActiveLink);
+    
+    // Update active link on page load
+    updateActiveLink();
+
+    // Update active link after smooth scroll completes
+    lenis.on('scroll', updateActiveLink);
+});
 
 
 
 
 
+
+
+
+
+
+
+  
 
 
 
