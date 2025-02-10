@@ -246,6 +246,21 @@ img {
 	}
 }
 
+
+video::-webkit-media-controls {
+    display: none !important;
+}
+
+video::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+
+video::-webkit-media-controls-panel {
+    display: none !important;
+}
+
+
+
 .banner {
 	height: 600px;
 	width: 100%;

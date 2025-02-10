@@ -178,9 +178,27 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
+/* <!-- ==================== Video Disable ==================== --> */
+
+/* <!-- ==================== Hide controlls ==================== --> */
 
 
-
+document.addEventListener("DOMContentLoaded", function() {
+  const video = document.getElementById('myVideo');
+  
+  // Remove controls attribute
+  video.removeAttribute('controls');
+  
+  // Force controls off after load
+  video.addEventListener('loadedmetadata', function() {
+      video.controls = false;
+  });
+  
+  // Prevent right-click on video
+  video.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+  });
+});
 
 
 
