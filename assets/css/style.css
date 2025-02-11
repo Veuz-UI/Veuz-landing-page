@@ -943,6 +943,10 @@ video::-webkit-media-controls-enclosure {
 		flex-direction: column;
 	}
 
+	body{
+		overflow-x: hidden;
+	}
+
 	.banner-form {
 		margin-top: 30px;
 		border-radius: 0px 0px 20px 20px;
