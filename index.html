@@ -16,10 +16,9 @@
 
 <body>
 
-    <!-- ==================== Cursor ==================== -->
-    <div class="cursor"></div>
-    <div class="cursor2"></div>
-    <!-- ==================== Cursor ==================== -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
 
 
     <section id="bannerSection">
@@ -636,7 +635,7 @@
     <script>
             $('.owl-carousel').owlCarousel({
                 loop: true,
-                margin: 0,
+                margin: 10,
                 nav: false,    // Hide navigation arrows
                 dots: false,   // Hide navigation dots
                 autoplay: true,

@@ -182,6 +182,28 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+// /* <!-- ==================== Hide controlls ==================== --> *
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Hide loader when page is fully loaded
+  window.addEventListener('load', function() {
+      const loader = document.querySelector('.loader-wrapper');
+      loader.classList.add('fade-out');
+      
+      // Remove loader from DOM after animation
+      setTimeout(() => {
+          loader.style.display = 'none';
+      }, 500);
+
+      // Enable scrolling after loader is gone
+      document.body.style.overflow = 'visible';
+  });
+});
+
+
+
+
+
 
 
   
