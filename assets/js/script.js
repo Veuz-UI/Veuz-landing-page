@@ -157,26 +157,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 /* <!-- ==================== Video Disable ==================== --> */
 
-document.addEventListener("DOMContentLoaded", function() {
-  const video = document.getElementById('myVideo');
-  
-  // Force video restart on iOS/Safari
-  video.addEventListener('loadeddata', function() {
-      video.play();
-  });
 
-  // Handle video loading errors
-  video.addEventListener('error', function() {
-      video.style.display = 'none';
-      // Show fallback image if needed
-  });
-
-  // iOS/Safari specific fixes
-  if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
-      video.setAttribute('playsinline', '');
-      video.setAttribute('webkit-playsinline', '');
-  }
-});
 
 /* <!-- ==================== Video Disable ==================== --> */
 
