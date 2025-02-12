@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   requestAnimationFrame(raf);
 
-  // Initialize Owl Carousel
+
   $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 0,
@@ -83,19 +83,15 @@ document.addEventListener("DOMContentLoaded", function() {
 /* <!-- ==================== click active menu ==================== --> */
 
 document.addEventListener("DOMContentLoaded", function() {
-  // Get all links that have a hash (#) in their href
   const links = document.querySelectorAll('a[href^="#"]');
   
   links.forEach(link => {
       link.addEventListener('click', function(e) {
       e.preventDefault();
-      
-      // Get the target section
       const targetId = this.getAttribute('href');
       const targetSection = document.querySelector(targetId);
       
       if (targetSection) {
-          // Smooth scroll to target
           lenis.scrollTo(targetSection, {
           duration: 1.5,
           easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
@@ -119,9 +115,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function updateActiveLink() {
         const scrollPosition = window.scrollY + 100;
 
-        // Check if we've scrolled past the product section
         if (productSection && scrollPosition > (productSection.offsetTop + productSection.offsetHeight)) {
-            // Remove active class from all links after product section
             navLinks.forEach(link => link.classList.remove('active'));
             return;
         }
@@ -142,13 +136,10 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Update active link on scroll
     window.addEventListener('scroll', updateActiveLink);
     
-    // Update active link on page load
-    updateActiveLink();
 
-    // Update active link after smooth scroll completes
+    updateActiveLink();
     lenis.on('scroll', updateActiveLink);
 });
 
@@ -167,15 +158,15 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function() {
   const video = document.getElementById('myVideo');
   
-  // Remove controls attribute
+
   video.removeAttribute('controls');
   
-  // Force controls off after load
+
   video.addEventListener('loadedmetadata', function() {
       video.controls = false;
   });
   
-  // Prevent right-click on video
+
   video.addEventListener('contextmenu', function(e) {
       e.preventDefault();
   });
@@ -185,17 +176,14 @@ document.addEventListener("DOMContentLoaded", function() {
 // /* <!-- ==================== Hide controlls ==================== --> *
 
 document.addEventListener("DOMContentLoaded", function() {
-  // Hide loader when page is fully loaded
   window.addEventListener('load', function() {
       const loader = document.querySelector('.loader-wrapper');
       loader.classList.add('fade-out');
       
-      // Remove loader from DOM after animation
       setTimeout(() => {
           loader.style.display = 'none';
       }, 500);
 
-      // Enable scrolling after loader is gone
       document.body.style.overflow = 'visible';
   });
 });

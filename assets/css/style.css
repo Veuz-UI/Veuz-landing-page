@@ -594,6 +594,7 @@ video::-webkit-media-controls-enclosure {
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 30px;
+	margin-bottom: 30px;
 }
 
 .serv-images {
@@ -677,7 +678,8 @@ video::-webkit-media-controls-enclosure {
 .product-box {
 	border: 1px solid #ebebeb;
 	padding: 20px;
-	min-height: 320px;
+	min-height: 340px;
+	margin-bottom: 40px;
 }
 
 .owl-carousel .item {
@@ -778,9 +780,10 @@ video::-webkit-media-controls-enclosure {
 .offices-box {
 	border: 1px solid #ebebeb;
 	background: #f5f5f5;
-	padding: 20px;
+	padding: 10px;
 	border-radius: 100px;
-	margin-top: 20px;
+	z-index: 1;
+	position: relative;
 }
 
 .offices-box p {
@@ -792,6 +795,12 @@ video::-webkit-media-controls-enclosure {
 	font-weight: 700;
 	text-align: center;
 	margin: 0px;
+}
+
+.map-main-links {
+    width: 70%;
+    margin: auto;
+    margin-top: -70px;
 }
 
 
@@ -841,7 +850,8 @@ video::-webkit-media-controls-enclosure {
 
 /* <!-- ==================== responsive start ==================== --> */
 
-@media only screen and (max-width: 1600px) {}
+@media only screen and (max-width: 1600px) {
+}
 
 
 @media only screen and (max-width: 1400px) {}
@@ -1008,6 +1018,13 @@ video::-webkit-media-controls-enclosure {
 	.banner {
 		border-radius: 0px;
 	}
+	.map-main-links{
+		width: 100%;
+		margin-top: 0p;
+	}
+	.para-color br{
+		display: none;
+	}
 
 }
 
@@ -1073,8 +1090,15 @@ video::-webkit-media-controls-enclosure {
 		top: auto;
 	}
 
+	.product-box{
+		min-height: 100%;
+	}
+
 	.footer h3 {
 		font-size: 20px;
+	}
+	.abt-img {
+		width: 100%;
 	}
 
 	.footer a {
